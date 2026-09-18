@@ -1,4 +1,6 @@
-name: Test
+name: Lint
+
+# Runs ShellCheck against the shim script.
 
 on:
   push:
@@ -7,8 +9,8 @@ on:
     branches: [main]
 
 jobs:
-  test:
-    name: Test
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
