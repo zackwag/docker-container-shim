@@ -12,4 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: echo "Replace this with real test steps."
+      - name: ShellCheck
+        run: shellcheck docker_container_shim.sh
